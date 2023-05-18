@@ -1,9 +1,9 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import HeroSlider from '../components/HeroSlider.vue'
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <HeroSlider />
   </main>
 </template>
