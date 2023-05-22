@@ -1,0 +1,17 @@
+.title-section {
+  align-items: flex-end;
+  background-image: url("src/assets/images/backgrounds/onda-grigio-bianco.svg");
+  background-size: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-start;
+  min-height: 55.6rem;
+
+  h1 {
+    color: $brand-pink;
+    margin: 0;
+    max-width: 87.3rem;
+    padding-bottom: 5.3rem;
+  }
+}

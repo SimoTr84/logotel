@@ -6,7 +6,7 @@
 }
 
 body {
-  font-size: $base-font-size; //font size reset to regular size to ensure browser settings compatibility
+  font-size: $font-size-base; //font size reset to regular size to ensure browser settings compatibility
 }
 
 h1, 
@@ -27,7 +27,7 @@ p {
 h1 {
   color: $black;
   font-family: $roboto-mono;
-  font-size: $h1-font-size;
+  font-size: $font-size-h1;
   line-height: 8rem;
 
     &.hero-title {
@@ -35,28 +35,31 @@ h1 {
       font-weight: 400;
     }
 
-    &.section-title {
-      color: $brand-red;
+    &.title-section {
+      color: $brand-pink;
       font-weight: 700;
     }
 }
 
 h3 {
-  color: $brand-red;
-  font-size: $h3-font-size;
+  color: $brand-pink;
+  font-size: $font-size-h3;
   font-family: $roboto-mono;
   font-weight: 700;
+  line-height: $line-height-h3;
 }
 
 h5 {
-  color: $brand-red;
-  font-size: $h5-font-size;
+  color: $brand-pink;
+  font-size: $font-size-h5;
   font-family: $roboto-mono;
   font-weight: 700;
-  line-height: 3rem;
+  line-height: $line-height-h5;
 }
 
 p {
+  color: $dark-grey;
   font-family: $roboto;
-  font-size: $base-font-size;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
 }

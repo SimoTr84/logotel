@@ -4,15 +4,24 @@ $white: #ffffff !default;
 $dark-grey: #272727 !default;
 $regular-grey: #838080 !default;
 $light-grey: #F3F3F3 !default;
-$brand-red: #F07C79 !default;
+$brand-pink: #F07C79 !default;
+$brand-dark-pink: #ED6562 !default;
+$brand-yellow: #FFED65 !default;
+$brand-dark-yellow: #E2CA40 !default;
+$brand-teal: #44E0DC !default;
+$brand-dark-teal: #28AFB0 !default;
 
 
 // Typography
-$h1-font-size: 6rem !default;
-$h3-font-size: 3.4rem !default;
-$h5-font-size: 2.4rem !default;
-// $h2-font-size: 5rem !default;
-$base-font-size: 1.6rem !default;
+$font-size-h1: 6rem !default;
+$font-size-h3: 3.4rem !default;
+$font-size-h5: 2.4rem !default;
+$font-size-base: 1.6rem !default;
+
+$line-height-h1: $font-size-h1 *1.5 !default;
+$line-height-h3: $font-size-h3 * 1.5 !default;
+$line-height-h5: $font-size-h5 * 1.5!default;
+$line-height-base: $font-size-base *1.5 !default; 
 
 
 // Fonts

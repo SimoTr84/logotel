@@ -31,6 +31,21 @@ body {
 
 .container {
   margin: $section-vertical-margin auto;
-  max-width: $container-width;
+  max-width: calc($container-width - 12rem);
   width: 100%;
+}
+
+.btn {
+  border-radius: 1.6rem;
+  font-family: $roboto;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2rem;
+  padding: 1.9rem;
+  text-transform: uppercase;
+  transition: all .2s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }

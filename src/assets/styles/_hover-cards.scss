@@ -1,135 +1,217 @@
+.hover-cards__wrapper {
+  background-image: url("src/assets/images/backgrounds/curva-rosa.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+}
+
 .hover-cards__container {
-    display: flex;
-    justify-content: space-between;
-    height: 48rem;
-    width: 100%;
-    
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    height: unset;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hover-card {
+    background-color: $white;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.1);
+    max-width: 42.7rem;
+    min-height: 65.4rem;
+    overflow: hidden;
+    position: relative;
+    transition: all .2s ease;
+    width: 33%;
+
     @media screen and (max-width: 768px) {
-      flex-direction: column;
-      height: unset;
-      justify-content: center;
-      align-items: center;
+      width: 100%;
+      margin-bottom: 6rem;
     }
 
-    .hover-card {
-      background-color: $white;
-      border-radius: 2rem;
-      box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.1);
-      max-width: 42.7rem;
-      min-height: 65.4rem;
-      overflow: hidden;
-      position: relative;
-      width: 33%;
+    img {
+      max-height: 24rem;
+    }
 
-      @media screen and (max-width: 768px) {
+    .hover-card__content {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 4rem;
+      transition: all .2s ease;
+    }
+
+    .hover-card__title {
+      margin: 0;
+      font-family: $roboto;
+      font-size: 34px;
+      text-transform: uppercase;
+      transition: all .2s ease;
+    }
+
+    .hover-card__divider {
+      height: 2px;
+      margin: 1.7rem 0 3.1rem;
+      transition: all .2s ease;
+      width: 100%;
+    }
+
+    .hover-card__img-wrapper {
+      position: relative;
+
+      .hover-card__icon-bg {
+        border-radius: 50%;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: -5px;
+        transition: all .1s ease;
         width: 100%;
-        margin-bottom: 6rem;
+        z-index: 0;
       }
 
       img {
-        max-height: 24rem;
+        position: relative;
+        z-index: 1;
       }
+    }
 
-      .hover-card__content {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 2rem;
-      }
+    .hover-card__paragraph {
+      padding: 3.4rem 1.6rem 2.4rem;
+    }
 
-      // .hover-card__date,
-      // .hover-card__overlay-date {
-      //   color: $regular-grey;
-      //   font-family: $roboto-mono;
-      //   font-size: 1.4rem;
-      //   line-height: 3rem;
-      //   margin: 0;
-      //   padding: 0 0 1rem;
-      //   text-align: justify;
-      // }
 
+    &.pink {
       .hover-card__title {
-        margin: 0;
-        font-family: $roboto;
-        font-size: 34px;
+        color: $brand-dark-pink;
       }
 
-      .hover-card__overlay-title {
-        margin-top: 0;
+      .hover-card__divider {
+        background-color: $brand-dark-pink;
       }
 
-      .hover-card__paragraph,
-      .hover-card__overlay-paragraph {
-        font-family: $roboto;
-        font-size: 2rem;
-        text-align: justify;
+      .hover-card__icon-bg {
+        background-color: $brand-dark-pink;
       }
 
-      .hover-card__overlay-date,
-      .hover-card__overlay-title,
-      .hover-card__overlay-paragraph {
+      .hover-card__btn {
+        background-color: $brand-dark-pink;
         color: $white;
       }
 
       &:hover {
-        .overlay {
-          top: 0;
+        background-color: $brand-pink;
+        transform: scale(101%);
+        
+        .hover-card__title {
+          color: $white;
         }
-      }
+      
+        .hover-card__divider {
+          background-color: $white;
+        }
+      
+        .hover-card__paragraph {
+          color: $white;
+        }
+      
+        .hover-card__btn {
+          background-color: $white;
+          color: $brand-dark-pink;
+        }
+      } 
     }
 
-  // figure {
-  //   display: grid;
-  //   overflow: hidden;
-  //   cursor: pointer;
-    
-  //   * {
-  //     grid-area: 1/1/1;
-  //     transition: .4s;
-  //   }
+    &.yellow {
+      .hover-card__title {
+        color: $brand-dark-yellow;
+      }
 
-  //   img {
-  //     max-height: 24rem;
-  //   }
+      .hover-card__divider {
+        background-color: $brand-dark-yellow;
+      }
 
-  //   .hover-card__content {
-  //     display: flex;
-  //     flex-direction: column;
-  //   }
+      .hover-card__icon-bg {
+        background-color: $brand-yellow;
+      }
 
-  //   figcaption {
-  //     display: grid;
-  //     align-items: end;
-  //     font-family: sans-serif;
-  //     font-size: 2.3rem;
-  //     font-weight: bold;
-  //     color: #0000;
-  //     padding: .75rem;
-  //     background: linear-gradient(0deg, rgba(237, 101, 98, 1) 0%, rgba(237, 101, 98, .7) 60%, rgba(255, 255, 255, 0) 100%);;
-  //     // background: var(--c, #0009);
-  //     clip-path: inset(0 var(--_i, 100%) 0 0);
-  //   }
+      .hover-card__btn {
+        background-color: $brand-dark-yellow;
+        color: $white;
+      }
 
-  //   &:hover {
-  //     img {
-  //       transform: scale(1.2);
-  //     }
+      &:hover {
+        background-color: $brand-dark-yellow; //su questo ho variato la logica del colore piu chiaro di shondo, considerando che la leggibilita della card (giallo chiaro troppo chiaro per la leggibilità del contenuto
+        transform: scale(101%);
+        
+        .hover-card__title {
+          color: $white;
+        }
+      
+        .hover-card__divider {
+          background-color: $white;
+        }
 
-  //     figcaption {
-  //       --_i: 0%;
-  //     }
-  //   }
-  // }
+        .hover-card__icon-bg {
+          background-color: unset;
+        }
+      
+        .hover-card__paragraph {
+          color: $white;
+        }
+      
+        .hover-card__btn {
+          background-color: $white;
+          color: $brand-dark-yellow;
+        }
+      } 
+    }
+
+    &.teal {
+      .hover-card__title {
+        color: $brand-dark-teal;
+      }
+
+      .hover-card__divider {
+        background-color: $brand-dark-teal;
+      }
+
+      .hover-card__icon-bg {
+        background-color: $brand-dark-teal;
+      }
+
+      .hover-card__btn {
+        background-color: $brand-dark-teal;
+        color: $white;
+      }
+
+      &:hover {
+        background-color: $brand-teal;
+        transform: scale(101%);
+        
+        .hover-card__title {
+          color: $white;
+        }
+      
+        .hover-card__divider {
+          background-color: $white;
+        }
+      
+        .hover-card__paragraph {
+          color: $white;
+        }
+      
+        .hover-card__btn {
+          background-color: $white;
+          color: $brand-dark-teal;
+        }
+      } 
+    }
+  }
 }
-
-
-
-// body {
-//   margin: 0;
-//   min-height: 100vh;
-//   display: grid;
-//   grid-auto-flow: column;
-//   place-content: center;
-//   background: #425a52;
-// }
