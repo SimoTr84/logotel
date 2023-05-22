@@ -1,0 +1,49 @@
+.nav {
+  background-color: $dark-grey;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  opacity: .8;
+  padding: 3rem 6rem;
+  position: absolute;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+
+  .logo {
+    height: 6rem;
+    width: 16.4rem;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+
+    li {
+      padding: 0 2.5rem;
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+
+      a {
+        color: $white;
+        font-family: $roboto-mono;
+        font-size: 2rem;
+        font-weight: 500;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
