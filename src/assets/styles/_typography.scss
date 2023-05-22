@@ -4,16 +4,59 @@
 :root {
   font-size: 62.5%; //font size reset for rem use
 }
+
 body {
-  font-size: 1.6rem; //font size reset to regular size to ensure browser settings compatibility
+  font-size: $base-font-size; //font size reset to regular size to ensure browser settings compatibility
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5,
+p {
+  &.white {
+    color: $white;
+  }
+
+  &.black {
+    color: $black;
+  }
 }
 
 h1 {
   color: $black;
-  font-family: 'Roboto Mono', monospace;
-  font-size: 6rem;
+  font-family: $roboto-mono;
+  font-size: $h1-font-size;
+  line-height: 8rem;
 
     &.hero-title {
-      font-family: Helvetica, sans-serif;
+      font-family: $helvetica;
+      font-weight: 400;
     }
+
+    &.section-title {
+      color: $brand-red;
+      font-weight: 700;
+    }
+}
+
+h3 {
+  color: $brand-red;
+  font-size: $h3-font-size;
+  font-family: $roboto-mono;
+  font-weight: 700;
+}
+
+h5 {
+  color: $brand-red;
+  font-size: $h5-font-size;
+  font-family: $roboto-mono;
+  font-weight: 700;
+  line-height: 3rem;
+}
+
+p {
+  font-family: $roboto;
+  font-size: $base-font-size;
 }

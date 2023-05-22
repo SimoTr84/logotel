@@ -1,3 +1,26 @@
 // Colours
 $black: #000000 !default;
 $white: #ffffff !default;
+$dark-grey: #272727 !default;
+$regular-grey: #838080 !default;
+$light-grey: #F3F3F3 !default;
+$brand-red: #F07C79 !default;
+
+
+// Typography
+$h1-font-size: 6rem !default;
+$h3-font-size: 3.4rem !default;
+$h5-font-size: 2.4rem !default;
+// $h2-font-size: 5rem !default;
+$base-font-size: 1.6rem !default;
+
+
+// Fonts
+$roboto: 'Roboto', sans-serif;
+$roboto-mono: 'Roboto Mono', monospace !default;
+$helvetica: 'Helvetica', sans-serif !default;
+
+// Layout
+$container-width: 1440px !default;
+$section-vertical-margin: 6rem !default;
+$section-large-vertical-margin: $section-vertical-margin*2 !default;

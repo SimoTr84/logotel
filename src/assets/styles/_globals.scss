@@ -23,12 +23,14 @@
 body {
   margin: 0;
   min-height: 100vh;
+  position: relative;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
-  max-width: 1440px;
+  margin: $section-vertical-margin auto;
+  max-width: $container-width;
   width: 100%;
 }
