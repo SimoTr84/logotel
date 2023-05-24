@@ -2,7 +2,8 @@
 import Navigation from '../components/Navigation.vue'
 import HeroSlider from '../components/HeroSlider.vue'
 import FlipCards from '../components/FlipCards.vue'
-import TitleSection from '../components/TitleSection.vue'
+import TitleSectionRight from '../components/TitleSectionRight.vue'
+import AccordionSection from '../components/AccordionSection.vue'
 import HoverCards from '../components/HoverCards.vue'
 </script>
 
@@ -13,7 +14,8 @@ import HoverCards from '../components/HoverCards.vue'
     <div class="container">
       <FlipCards />
     </div>
-    <TitleSection />
+      <TitleSectionRight />
+      <AccordionSection />
     <HoverCards />
   </main>
 </template>

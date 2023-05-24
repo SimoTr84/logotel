@@ -1,0 +1,192 @@
+.accordion-section {
+  background: linear-gradient(180deg, rgba(34, 34, 34, 1) 0%, rgba(68, 68, 68, 1) 100%);
+  background-clip: border-box;
+  margin-top: -1px;
+  margin-bottom: -1px;
+  padding: 9rem 15rem;
+  position: relative;
+
+  .accordion {
+    transition: all 2s;
+    max-width: 112rem;
+    margin: 3rem auto;
+    position: relative;
+
+    h1, h3, h5, p {
+      padding: 0;
+      margin: 0;
+    }
+
+    .accordion__btn {
+      display: flex;
+      position: relative;
+      transition: all 2s;
+
+      .accordion__btn-icon {
+        cursor: pointer;
+        align-items: center;
+        border-radius: 50%;
+        display: flex;
+        height: 9.2rem;
+        justify-content: center;
+        margin-left: 0.5rem;
+        width: 9.2rem;
+        transition: all 1s ease-in-out;
+        z-index: 1;
+
+        &.teal {
+          background-color: $brand-teal;
+
+          &:before {
+            background-color: $brand-teal;
+          }
+        }
+
+        &.yellow {
+          background-color: $brand-yellow;
+
+          &:before {
+            background-color: $brand-yellow;
+          }
+        }
+
+        &.pink {
+          background-color: $brand-pink;
+
+          &:before {
+            background-color: $brand-pink;
+          }
+        }
+
+        img {
+          padding: 2rem;
+          z-index: 1;
+        }
+      }
+
+      &.active {
+        .accordion__btn-icon {
+          &:before {
+            content: "";
+            border-radius: 50%;
+            height: 14rem;
+            opacity: .5;
+            position: absolute;
+            transition: all 1s ease-in-out;
+            width: 14rem;
+            z-index: 0;
+          }
+        }
+      }
+    }
+
+    .accordion__content {
+      display: none;
+      justify-content: center;
+      position: relative;
+      // max-height: 0;
+        opacity: 0;
+        // visibility: hidden;
+        transition: all 3s ease;
+
+      .accordion__content-inner {
+        // display: none;
+        position: relative;
+        max-width: 41.5rem;
+        text-align: justify;
+      }
+    }
+
+    // activation class - see main.js for logic
+    &.active {
+      .accordion__content {
+        display: flex;
+        // max-height: 100%;
+        opacity: 1;
+        // visibility: visible;
+        // transition: max-height 3s;
+      }
+    }
+
+    // left oriented accordion (odd accordions) - white line styles
+    &.accordion-left {
+      &:after {
+        animation: all 1s ease-in-out;
+        content: "";
+        border-top: 01rem solid $white;
+        border-right: 01rem solid $white;
+        border-top-right-radius: 60px;
+        height: 100%;
+        left: 28%;
+        position: absolute;
+        top: 9.5rem;
+        transform: translateY(-40%);
+        width: 42%;
+        z-index: 0;
+      }
+
+      &.active {
+        &:after {
+          transform: translateY(-15%);
+        }
+      }
+
+      .accordion__btn {
+        .accordion__btn-inner {
+          display: flex;
+          flex-direction: row;
+        }
+      }
+
+      .accordion__content-inner {
+        margin-right: 6rem;
+      }
+    }
+
+    &.accordion__right {
+      &:after {
+        animation: all 1s ease-in-out;
+        content: "";
+        border-top: 1rem solid $white;
+        border-left: 1rem solid $white;
+        border-top-left-radius: 60px;
+        height: 100%;
+        right: 28%;
+        position: absolute;
+        top: 9.5rem;
+        transform: translateY(-40%);
+        width: 46%;
+        z-index: 0;
+      }
+    
+      &.active {
+        &:after {
+          transform: translateY(-15%);
+        }
+      }
+
+      .accordion__btn {
+        justify-content: flex-end;
+
+        .accordion__btn-inner {
+          display: flex;
+          flex-direction: row-reverse;
+          
+          .accordion__btn-title {
+            margin-left: 3rem;
+            margin-top: 1rem;
+            text-align: left;
+
+            h1, h3 {
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  input {
+    display: none;
+  }
+}
