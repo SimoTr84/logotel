@@ -12,10 +12,10 @@
   width: 100%;
   
   @media screen and (max-width: 768px) {
+    align-items: center;
     flex-direction: column;
     height: unset;
     justify-content: center;
-    align-items: center;
   }
 
   .hover-card {
@@ -84,6 +84,7 @@
 
     .hover-card__paragraph {
       padding: 3.4rem 1.6rem 2.4rem;
+      text-align: center;
     }
 
 

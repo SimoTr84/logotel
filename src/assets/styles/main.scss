@@ -1,8 +1,13 @@
+// CSS reset
+@import "../../../node_modules/normalize-scss/sass/_normalize.scss";
+
+// Project specific stylesheets
 @import "/src/assets/styles/variables";
 @import "/src/assets/styles/typography";
 @import "/src/assets/styles/globals";
 @import "/src/assets/styles/navigation";
 @import "/src/assets/styles/hero-slider";
 @import "/src/assets/styles/title-section";
+@import "/src/assets/styles/accordion-section";
 @import "/src/assets/styles/flip-cards";
 @import "/src/assets/styles/hover-cards";

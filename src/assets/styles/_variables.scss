@@ -1,9 +1,10 @@
 // Colours
-$black: #000000 !default;
 $white: #ffffff !default;
-$dark-grey: #272727 !default;
-$regular-grey: #838080 !default;
 $light-grey: #F3F3F3 !default;
+$regular-grey: #838080 !default;
+$dark-grey: #272727 !default;
+$darkest-grey: #222222 !default;
+$black: #000000 !default;
 $brand-pink: #F07C79 !default;
 $brand-dark-pink: #ED6562 !default;
 $brand-yellow: #FFED65 !default;
@@ -33,3 +34,7 @@ $helvetica: 'Helvetica', sans-serif !default;
 $container-width: 1440px !default;
 $section-vertical-margin: 6rem !default;
 $section-large-vertical-margin: $section-vertical-margin*2 !default;
+
+// Responsiveness
+$desktop-screen-size: 1024px !default;
+$tablet-screen-size: 768px !default;
