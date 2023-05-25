@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "image": "card-portrait-1.jpg",
+    "imageAlt": "Logotel - Immagine di Donna",
+    "date": "13.09.2020",
+    "title": "Lorem Ipsum dolor sit amet, consectetuer",
+    "titleOverlay": "No nummy nibh: euismod tin",
+    "excerpt": "Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim…",
+    "body": "Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupidi aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "id": "2",
+    "image": "card-portrait-2.jpg",
+    "imageAlt": "Logotel - Immagine di Donna",
+    "date": "12.09.2020",
+    "title": "Lorem Ipsum dolor sit amet, consectetuer",
+    "titleOverlay": "No nummy nibh: euismod tin",
+    "excerpt": "Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim…",
+    "body": "Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupidi aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "id": "3",
+    "image": "card-portrait-3.jpg",
+    "imageAlt": "Logotel - Immagine di Uomo",
+    "date": "12.09.2020",
+    "title": "Lorem Ipsum dolor sit amet, consectetuer",
+    "titleOverlay": "No nummy nibh: euismod tin",
+    "excerpt": "Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim…",
+    "body": "Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupidi aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  }
+]
