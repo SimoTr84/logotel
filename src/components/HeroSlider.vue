@@ -13,8 +13,8 @@ defineProps({
 })
 </script>
 <template>
-  <div class="header-banner">
-    <div class="hero-slider" id="slider" aria-label="Gallery">
+  <div class="header-banner" id="slider">
+    <div class="hero-slider">
       <ol class="hero-slider__viewport">
         <li id="hero-slider__slide1" tabindex="0" class="hero-slider__slide">
           <div class="title-wrapper">
@@ -121,4 +121,41 @@ defineProps({
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    toggleAccordion(event) {
+      // console.log(event);
+      let parentButton = event.target.closest('.accordion__btn');
+      let parentAccordion = event.target.closest('.accordion');
+      parentAccordion.classList.toggle('active');
+      parentButton.classList.toggle('active');
+
+      let $accordions = document.getElementsByClassName('accordion');
+      let $buttons = document.getElementsByClassName('accordion__btn');
+
+      for (let accordion of $accordions) {
+        if (parentAccordion !== accordion) {
+          if (accordion.classList.contains('active')) {
+            accordion.classList.remove('active');
+          }
+          // if (parentButton.classList.contains('active')) {
+          //   parentButton
+          // }
+        }
+      }
+
+      for (let button of $buttons) {
+        if (parentButton !== button) {
+          if (button.classList.contains('active')) {
+            button.classList.remove('active');
+            console.log('button deactivated');
+          }
+        }
+      }
+    }
+  }
+}
+</script>
 

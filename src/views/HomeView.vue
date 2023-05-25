@@ -5,6 +5,7 @@ import FlipCards from '../components/FlipCards.vue'
 import TitleSectionRight from '../components/TitleSectionRight.vue'
 import AccordionSection from '../components/AccordionSection.vue'
 import HoverCards from '../components/HoverCards.vue'
+import Footer from '../components/Footer.vue'
 </script>
 
 <template>
@@ -14,9 +15,9 @@ import HoverCards from '../components/HoverCards.vue'
     <div class="container">
       <FlipCards />
     </div>
-      <TitleSectionRight />
       <AccordionSection />
     <HoverCards />
+    <Footer />
   </main>
 </template>
 
