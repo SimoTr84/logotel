@@ -1,0 +1,111 @@
+.footer {
+  background-color: $black;
+
+  .container {
+    margin-top: 0;
+  }
+
+  .footer__wrapper {
+    display: flex;
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+    margin-bottom: 0;
+
+    @media screen and (max-width: $desktop-screen-size ) {
+      flex-direction: column;
+    }
+  }
+
+  .footer__col {
+    display: flex;
+    flex-direction: column;
+
+    &.footer__col-left {
+      width: 70%;
+
+      @media screen and (max-width: $desktop-screen-size ) {
+        width: 100%
+      }
+    }
+
+    &.footer__col-right {
+      align-items: flex-end;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      width: 30%;
+
+      @media screen and (max-width: $desktop-screen-size ) {
+          width: 100%
+        }
+    }
+
+    p {
+      color: $white;
+      font-family: $roboto-mono;
+    }
+  }
+
+  .footer__logo {
+    max-width: 16.4rem;
+    padding-bottom: 3rem;
+    width: 100%;
+  }
+
+  .footer__nav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    max-width: 72rem;
+    padding-left: 0;
+
+    @media screen and (max-width: $desktop-screen-size ) {
+      max-width: 100%;
+      flex-direction: column;
+
+    }
+
+    .footer__nav-item {
+      border-right: 1px solid $white;
+
+      @media screen and (max-width: $desktop-screen-size ) {
+        border-right: none;
+        padding-bottom: 2rem;
+      }
+      
+      a {
+        color: $white;
+        font-family: $roboto-mono;
+        font-size: $font-size-small;
+        text-decoration: none;
+        padding: 0 1.5rem 0 1rem;
+        
+      }
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+
+  .footer__copyright {
+    font-family: $roboto-mono;
+    font-size: $font-size-small;
+  }
+
+  .footer__icons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 26.4rem;
+    width: 100%;
+    
+    .footer__icon {
+      text-decoration: none;
+
+      img {
+        height: 4rem;
+        width: 4rem;
+      }
+    }
+  }
+}
