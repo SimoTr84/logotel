@@ -4,6 +4,7 @@ $light-grey: #F3F3F3 !default;
 $regular-grey: #838080 !default;
 $dark-grey: #272727 !default;
 $darkest-grey: #222222 !default;
+$beige: #D8D8D8 !default;
 $black: #000000 !default;
 $brand-pink: #F07C79 !default;
 $brand-dark-pink: #ED6562 !default;
@@ -18,11 +19,13 @@ $font-size-h1: 6rem !default;
 $font-size-h3: 3.4rem !default;
 $font-size-h5: 2.4rem !default;
 $font-size-base: 1.6rem !default;
+$font-size-small: 1.4rem !default;
 
 $line-height-h1: $font-size-h1 *1.5 !default;
 $line-height-h3: $font-size-h3 * 1.5 !default;
 $line-height-h5: $font-size-h5 * 1.5!default;
-$line-height-base: $font-size-base *1.5 !default; 
+$line-height-base: $font-size-base *1.5 !default;
+$font-size-small: 1.4rem *1.5 !default;
 
 
 // Fonts
@@ -37,4 +40,5 @@ $section-large-vertical-margin: $section-vertical-margin*2 !default;
 
 // Responsiveness
 $desktop-screen-size: 1024px !default;
+$desktop-screen-size-min: 1024px - 1  !default;
 $tablet-screen-size: 768px !default;

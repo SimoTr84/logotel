@@ -103,13 +103,15 @@ ol, li {
 
   .title-wrapper {
     left: 17.3rem;
-    max-width: 54.7rem;
+    // max-width: 54.7rem;
+    max-width: 41.7vw;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
 
     @media screen and (max-width: 768px) {
-      left: 10rem
+      left: 10rem;
+      max-width: 70vw;
     }
   }
 
@@ -174,12 +176,10 @@ ol, li {
 
 .hero-slider__navigation {
   position: absolute;
-  // bottom: 0;
   left: 0;
   text-align: left;
   top: 16rem;
   transform: translateX(0%);
-  // width: 4.6rem;
 }
 
 .hero-slider__navigation-list {
@@ -239,7 +239,7 @@ ol, li {
   right: 9rem;
 
   @media screen and (max-width: 768px) {
-    right: 3rem
+    right: 3rem;
   }
 }
 
